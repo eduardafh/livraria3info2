@@ -1,19 +1,13 @@
 from django.contrib import admin
-
 from django.urls import include, path
-
 from drf_spectacular.views import (
     SpectacularAPIView,
     SpectacularRedocView,
     SpectacularSwaggerView,
 )
-
-
-
 from rest_framework.routers import DefaultRouter
-from core.views import CategoriaViewSet, UserViewSet
-from core.views import EditoraViewSet
 
+from core.views import CategoriaViewSet, EditoraViewSet, UserViewSet
 
 router = DefaultRouter()
 
